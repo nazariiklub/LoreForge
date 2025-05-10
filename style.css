@@ -1,0 +1,464 @@
+/* імпорт шрифту з гугл фонтс */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+/* фонове зображення і шрифт */
+body {
+background-image: url('1346963.png');
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+margin: 0;
+padding: 0;
+font-family: "Cormorant Garamond", serif;
+font-optical-sizing: auto;
+font-weight: 300;
+font-style: normal;
+}
+/* стилі шапки сайту */
+header{
+width: 99,9%;
+height: 100px;
+background: linear-gradient(90deg, rgba(217, 217, 217, 0.33) 0%, rgba(224, 200, 182, 0.29) 100%);
+}
+/* стилі, щоб розставити кнопки з інформацією */
+.box-father{
+display: flex;
+flex-direction: row;
+margin-top: 50px;
+margin-left: 150px;
+}
+/* стилі кнопок */
+.box, .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9, .box10, .box11, .box12, .box13, .box14 {
+width: 75px;
+height: 30px;
+background: linear-gradient(180deg, #EBE4E4 0%, rgba(217, 217, 217, 0.67) 100%);
+border: 1px solid #565050c2;
+border-radius: 10px 10px 0px 0px;
+cursor: pointer;
+}
+/* стилі кнопок при наводженні мишкою */
+.box:hover,
+.box1:hover, 
+.box2:hover, 
+.box3:hover, 
+.box4:hover, 
+.box5:hover, 
+.box6:hover, 
+.box7:hover, 
+.box8:hover, 
+.box9:hover, 
+.box10:hover, 
+.box11:hover, 
+.box12:hover, 
+.box13:hover, 
+.box14:hover{
+background: linear-gradient(180deg, #dcd6d6 0%, rgba(204, 204, 204, 0.67) 100%)
+
+}
+/* певні стилі тексту */
+.text{
+display: flex;
+justify-content: center; 
+align-items:flex-start; 
+height: 50px;
+margin-top: 5px;
+}
+/* стилі розположення перемикача тем */
+.theme{
+margin-top: 20px;
+position: absolute;
+margin-left: 10px;
+}
+/* кнопка щоб додати інформаю */
+.new{
+box-sizing: border-box;
+margin-top: -55px;
+position: absolute;
+width: 254px;
+height: 42px;
+background: #D9D9D9;
+border: 3px solid #A79191;
+box-shadow: -5px -4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 200px 400px 40px 250px;
+cursor: pointer;
+}
+/* кнопка щоб ввійти */
+.sign{
+margin-left: 220px;
+margin-top: -20px;
+background: linear-gradient(90deg, #D9D9D9 0%, #CCCCCC 100%);
+border: 3px solid #A79191;
+border-radius: 40px 400px 250px 250px;
+box-sizing: border-box;
+box-shadow: -5px -2px 4px rgba(0, 0, 0, 0.25);
+position: absolute;
+width: 254px;
+height: 42px;
+cursor: pointer;
+}
+/* стилі при наводженні мишкою */
+.sign:hover{
+background: linear-gradient(90deg, #D9D9D9 0%, #b5b5b5 100%);
+}
+
+.new:hover{
+background: linear-gradient(90deg, #b5b5b5 0%, #D9D9D9 100%);
+}
+/* перемикач тем */
+.switch {
+display: block;
+width: 60px;
+height: 30px;
+background: #ddd;
+border-radius: 30px;
+position: relative;
+cursor: pointer;
+transition: background 0.4s;
+border: 2px solid rgba(0, 0, 0, 0.4);
+}
+/* іконки сонця і мясця при зміні теми */
+.switch .icon {
+content: "";
+position: absolute;
+top: 3px;
+left: 3px;
+width: 24px;
+height: 24px;
+background-image: url('sun.png'); 
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 50%;
+transition: all 0.4s ease;
+}
+
+#toggle:checked + .switch {
+background: #333;
+}
+
+#toggle:checked + .switch .icon {
+left: 33px;
+background-image: url('moon.png'); 
+}
+/* ті ж стилі, які були, але тепер темні  */
+body.dark-mode {
+background-image:url('night.jpg') ;
+color: white;
+}
+body.dark-mode header{
+width: 99,9%;
+height: 100px;
+background: linear-gradient(90deg, rgba(5, 2, 45, 0.33) 0%, rgba(4, 2, 41, 0.33) 100%);
+}
+
+
+body.dark-mode .box,body.dark-mode .box1,body.dark-mode .box2,body.dark-mode .box3,body.dark-mode .box4,body.dark-mode .box5,body.dark-mode .box6,body.dark-mode .box7,body.dark-mode .box8,body.dark-mode .box9,body.dark-mode .box10,body.dark-mode .box11,body.dark-mode .box12,body.dark-mode .box13,body.dark-mode .box14 {
+width: 75px;
+height: 30px;
+background: linear-gradient(180deg, rgba(6, 2, 50, 0.484) 0%, rgba(5, 2, 45, 0.415) 100%);
+border: 1px solid #565050c2;
+border-radius: 10px 10px 0px 0px;
+cursor: pointer;
+}
+
+body.dark-mode .box:hover,
+body.dark-mode .box1:hover, 
+body.dark-mode .box2:hover, 
+body.dark-mode .box3:hover, 
+body.dark-mode .box4:hover, 
+body.dark-mode .box5:hover, 
+body.dark-mode .box6:hover, 
+body.dark-mode .box7:hover, 
+body.dark-mode .box8:hover, 
+body.dark-mode .box9:hover, 
+body.dark-mode .box10:hover, 
+body.dark-mode .box11:hover, 
+body.dark-mode .box12:hover, 
+body.dark-mode .box13:hover, 
+body.dark-mode .box14:hover {
+background-color: rgba(10, 5, 61, 0.219);
+}
+
+body.dark-mode .new{
+box-sizing: border-box;
+margin-top: -55px;
+position: absolute;
+width: 254px;
+height: 42px;
+background: #1a055eea;
+border: 3px solid #170330d6;
+box-shadow: -5px -4px 5px rgba(152, 150, 150, 0.25);
+border-radius: 200px 400px 40px 250px;
+cursor: pointer;
+}
+
+body.dark-mode .sign{
+margin-left: 220px;
+margin-top: -20px;
+background: linear-gradient(90deg, #1a055e 0%,#170359  100%);
+border: 3px solid #170330d6;
+border-radius: 40px 400px 250px 250px;
+box-sizing: border-box;
+box-shadow: -5px -2px 5px rgba(152, 150, 150, 0.25);
+position: absolute;
+width: 254px;
+height: 42px;
+cursor: pointer;
+}
+
+body.dark-mode .sign:hover{
+background: linear-gradient(90deg, #170359 0%, #0e042eea 100%);
+}
+
+body.dark-mode .new:hover{
+background: linear-gradient(90deg, #0e042eea 0%, #170359 100%);
+}
+/* вікно при спробі додати інфомацію */
+.overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+display: none;
+}
+/* повідомлення про крадіжку сервера */
+.message-box {
+background-color: #fff;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+text-align: center;
+max-width: 400px;
+width: 100%;
+}
+/* темна тема */
+body.dark-mode .message-box{
+background-color: #201e1e;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0px 4px 8px rgba(104, 90, 90, 0.3);
+text-align: center;
+max-width: 400px;
+width: 100%;
+}
+/* додаю importnt, яке активовуєтья щоб показти попередження */
+body.importnt .overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+}
+/* хрестик для закривання вікна попередження */
+.close-btn {
+position: absolute;
+top: 10px;
+right: 10px;
+background: none;
+border: none;
+color: white;
+font-size: 24px;
+cursor: pointer;
+}
+/* стилі при наведенні мишкою */
+.close-btn:hover {
+color: red;
+}
+/* форма для запонення акаунта */
+.account-form {
+width: 350px;
+padding: 30px;
+margin: 100px auto;
+background-color: #f3f3f3c2;
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(89, 63, 63, 0.442);
+display: none;
+}
+/* стилі для h2 в формі */
+.account-form h2 {
+text-align: center;
+margin-bottom: 25px;
+color: #333;
+}
+/* стилі лейбла в формі */
+.account-form label {
+display: block;
+margin-bottom: 8px;
+font-weight: 500;
+color: #555;
+}
+/* вікно інпуту */
+.account-form input {
+width: 100%;
+padding: 10px 12px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+transition: 0.3s;
+font-size: 14px;
+}
+
+/* .account-form input:focus {
+border-color: #0077ff;
+outline: none;
+box-shadow: 0 0 5px rgba(0, 119, 255, 0.4);
+} */
+
+
+/* кнопка створення в формв акунта */
+#create-account-btn {
+width: 100%;
+padding: 12px;
+background-color: #0077ffa4;
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 15px;
+cursor: pointer;
+transition: 0.3s;
+}
+/* анімація при наводжнні мишкою */
+#create-account-btn:hover {
+background-color: #1966b9bc;
+}
+/* знову темні теми */
+body.dark-mode .account-form {
+background-color: #1e1e2f;
+box-shadow: 0 0 20px rgba(128, 0, 128, 0.3); 
+display: none;
+}
+
+body.dark-mode .account-form h2 {
+color: #d1b3ff; 
+}
+
+body.dark-mode .account-form label {
+color: #ccc;
+}
+
+body.dark-mode .account-form input {
+background-color: #2a2a3d;
+color: #f0f0f0;
+border: 1px solid #444;
+}
+
+body.dark-mode .account-form input:focus {
+border-color: #9d4edd;
+box-shadow: 0 0 6px rgba(157, 78, 221, 0.6);
+}
+
+body.dark-mode #create-account-btn {
+background-color: #7b2cbf;
+color: #fff;
+}
+
+body.dark-mode #create-account-btn:hover {
+background-color: #5a189a;
+}
+/* тут стилі, яка не відображають форму */
+.account-form {
+display: none;
+}
+
+/* стилі щоб заблокувати на екрані */
+body.sing .account-form {
+display: block;
+}
+
+/* чорні теми */
+body.dark-mode .account-form {
+display: none;
+}
+
+
+body.dark-mode.sing .account-form {
+display: block;
+}
+
+/* основні стилі сторінки */
+.page {
+display: none;
+background-color: #d2dde884;
+font-family: "Cormorant Garamond", serif;
+margin-left: 100px;
+width: 85%;
+margin-top: -1px;
+padding: 10px;
+border-radius: 8px;
+}
+/* відображення/блокування сторнки на екрані */
+.page.active {
+display: block;
+}
+/* чорна тема для сторінки */
+body.dark-mode .page{
+    background-color: rgba(10, 5, 61, 0.219);
+}
+/*загальні  стилі футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+/* стилі для футера через клас */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 50px;
+}
+/* стилі для <p> в футері*/
+.footer-left p {
+    margin: 0;
+}
+/* стилі посилань в футері */
+.footer-middle .footer-links {
+    list-style: none;
+    padding: 0;
+}
+/* робить посилання в футері розташованими в ряд  */
+.footer-middle .footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+/* дає посиланням білий колір і прибирає підкреслення */
+.footer-middle .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* стилі при наведенні */
+.footer-middle .footer-links li a:hover {
+    text-decoration: underline;
+}
+/* прибирає маркери списку */
+.footer-right .social-media {
+    list-style: none;
+    padding: 0;
+}
+/* розміщує іконки соцмереж в ряд  */
+.footer-right .social-media li {
+    display: inline;
+    margin: 0 10px;
+}
+/* дає посиланням білий колір і прибирає підкреслення в правій частині футера*/
+.footer-right .social-media li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* змінює колір посилання на синій */
+.footer-right .social-media li a:hover {
+    color: #007bff;
+}
