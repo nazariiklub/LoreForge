@@ -333,7 +333,7 @@ background-color: #1966b9bc;
 }
 /* знову темні теми */
 body.dark-mode .account-form {
-background-color: #1e1e2f;
+background-color: #1e1e2fd7;
 box-shadow: 0 0 20px rgba(128, 0, 128, 0.3); 
 display: none;
 }
@@ -461,4 +461,21 @@ footer {
 /* змінює колір посилання на синій */
 .footer-right .social-media li a:hover {
     color: #007bff;
+}
+/* стилі кнопки ввімкнення/вимкнення музики */
+.music-btn {
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 10px 15px;
+border: none;
+border-radius: 10px;
+background-color: #eeeeeeba;
+cursor: pointer;
+}
+/* темна тема для кнопки музки */
+body.dark-mode .music-btn {
+background-color: #333;
+color: white;
+background-color: #2e2b38dc;
 }
